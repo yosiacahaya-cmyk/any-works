@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>A&Y Coffee</title>
+<link rel='stylesheet' href='style.css'>
+</head>
+<div id="popup-order"></div>
+
+<script>
+const orders = [
+
+"Rina baru saja order Spanish Latte ☕",
+"Adit baru saja order Matcha Latte 🍵",
+"Nabila baru saja order Americano 🤎",
+"Kevin baru saja order Kopi Kenangan Mantan ☕",
+"Salsa baru saja order TOMORO Aren Latte 🟧",
+"Fajar baru saja order Caffe Mocha 🤎",
+"Dina baru saja order Peach Jasmine Tea 🍑",
+"Raka baru saja order Cappuccino ☕",
+"Anisa baru saja order Caramel Macchiato 🍮",
+"Rendi baru saja order Coconut Aren Latte 🥥",
+"Vina baru saja order Pistachio Latte 💚",
+"Rizky baru saja order Sea Salt Chocolate 🍫",
+"Farhan baru saja order Matcha Frappe 🍵",
+"Nadya baru saja order Choco Oat Latte 🤎",
+"Bagas baru saja order Kopi Susu Aren ☕",
+"Putri baru saja order Strawberry Americano 🍓",
+"Yoga baru saja order Master S.O.E Latte ☕",
+"Caca baru saja order Peach Oolong Milk Tea 🍑",
+"Rian baru saja order Cheese Cloud Latte 🧀",
+"Sarah baru saja order Spanish Aren Latte ☕"
+
+];
+
+let index = 0;
+
+function showPopup(){
+const popup = document.getElementById("popup-order");
+
+popup.innerHTML = orders[index];
+
+popup.classList.add("show");
+
+setTimeout(()=>{
+popup.classList.remove("show");
+},3000);
+
+index++;
+
+if(index >= orders.length){
+index = 0;
+}
+}
+
+setInterval(showPopup,4000);
+</script>
+<body>
+
+<section class='hero'>
+<h1>A&Y Coffee ☕</h1>
+<p>Order kopi favorit langsung via WhatsApp.</p>
+<p>Maaf ya webnya lagi proses😊.</p>
+
+<a class='btn'
+href='https://whatsapp.com/channel/0029VbCktMyJJhzYIg65Ll0z'
+target='_blank'>
+📢 Ikuti Saluran WA
+</a>
+</section>
+
+<section class='section'>
+<h2>Bisa Order Dari</h2>
+
+<div class='grid'>
+
+<div class='card'>
+<a href='kopi-kenangan.html'>
+<h3>☕ Kopi Kenangan</h3>
+<p>Lihat menu lengkap</p>
+</a>
+</div>
+
+<div class='card'>
+<a href='tomoro2.html'>
+
+<h3>🐱 Tomoro Coffee</h3>
+<p>Lihat menu lengkap</p>
+</a>
+</div>
+
+<div class='card'>
+<a href='janji-jiwa.html'>
+<h3>🔥 Janji Jiwa</h3>
+<p>Lihat menu lengkap</p>
+</a>
+</div>
+
+<div class='card'>
+<a href='https://wa.me/6288226744942?text=Halo%20A%26Y%20Coffee%20saya%20mau%20request%20brand%20lain'
+target='_blank'>
+<h3>🧋 Dan Lainnya</h3>
+<p>Request brand lain</p>
+</a>
+</div>
+
+</div>
+</section>
+
+<section class='section'>
+<h2>Hubungi Admin</h2>
+</section>
+
+<div class='contact-wrap'>
+
+<div class='contact'>
+<h3>Yos</h3>
+<p>0851-8861-9090</p>
+
+<a class='wa'
+href='https://wa.me/6285188619090'
+target='_blank'>
+Chat WhatsApp
+</a>
+</div>
+
+<div class='contact'>
+<h3>An</h3>
+<p>0882-2674-4942</p>
+
+<a class='wa'
+href='https://wa.me/6288226744942'
+target='_blank'>
+Chat WhatsApp
+</a>
+</div>
+
+</div>
+
+</body>
+</html>
