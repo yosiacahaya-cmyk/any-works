@@ -14,23 +14,585 @@
 
 <h2>🔥 Janji Jiwa</h2>
 
+<div class="order-form">
+
+<input
+type="text"
+id="outlet"
+placeholder="Outlet pickup"
+>
+
+<input
+type="text"
+id="jam"
+placeholder="Jam pickup"
+>
+
+</div>
+
+<input
+type="text"
+id="search"
+placeholder="Cari minuman..."
+onkeyup="searchMenu()"
+>
+
+<script>
+
+function searchMenu() {
+
+let input = document.getElementById("search").value.toLowerCase();
+
+let items = document.querySelectorAll(".item");
+
+items.forEach(item => {
+
+let text = item.innerText.toLowerCase();
+
+if(text.includes(input)){
+item.style.display = "block";
+}else{
+item.style.display = "none";
+}
+
+});
+
+}
+
+</script>
+
 <div class='menu-grid'>
 
+<div class='item'>
+
+<h4>Espresso</h4>
+<div class="old-price">Rp 19.00</div>
+<p>Rp 14.500</p>
+
+<button class="order"
+onclick="pesanWA('Espresso')">
+Pesan
+</button>
+
+</div>
 
 <div class='item'>
-<h4>Signature Kopi Susu</h4>
-<p>Rp 17.500</p>
-<a class='order'
-href='https://wa.me/6285188619090?text=Pesan%20Signature%20Kopi%20Susu'
-target='_blank'>
+
+<h4>Iced Dobel Shaken Espresso</h4>
+<div class="old-price">Rp 25.00</div>
+<p>Rp 20.000</p>
+
+<button class="order"
+onclick="pesanWA('Iced Dobel Shaken Espresso')">
 Pesan
-</a>
+</button>
+
 </div>
+
+<div class='item'>
+
+<h4>Americano</h4>
+<div class="old-price">Rp 23.00</div>
+<p>Rp 17.500</p>
+
+<button class="order"
+onclick="pesanWA('Americano')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Milo Mocha Macchiato</h4>
+<div class="old-price">Rp 28.000</div>
+<p>Rp 22.500</p>
+
+<button class="order"
+onclick="pesanWA('Milo Mocha Macchiato')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Caramel Larre</h4>
+<div class="old-price">Rp 27.000</div>
+<p>Rp 21.500</p>
+
+<button class="order"
+onclick="pesanWA('Caramel Latte')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Signature Kopi Susu</h4>
+<div class="old-price">Rp 25.000</div>
+<p>Rp 19.500</p>
+
+<button class="order"
+onclick="pesanWA('Signature Kopi Susu')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Latte</h4>
+<div class="old-price">Rp 24.00</div>
+<p>Rp 19.000</p>
+
+<button class="order"
+onclick="pesanWA('latte')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Cappuccino</h4>
+<div class="old-price">Rp 24.00</div>
+<p>Rp 19.000</p>
+
+<button class="order"
+onclick="pesanWA('Cappuccino')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Moacha</h4>
+<div class="old-price">Rp 27.000</div>
+<p>Rp 22.000</p>
+
+<button class="order"
+onclick="pesanWA('mocha')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Hazenalnut Latte</h4>
+<div class="old-price">Rp 27.000</div>
+<p>Rp 22.000</p>
+
+<button class="order"
+onclick="pesanWA('hazenalnut Latte')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Caramel macchiato</h4>
+<div class="old-price">Rp 28.000</div>
+<p>Rp 22.500</p>
+
+<button class="order"
+onclick="pesanWA('Caramel Macchiato')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Vanilla Latte</h4>
+<div class="old-price">Rp 26.000</div>
+<p>Rp 21.500</p>
+
+<button class="order"
+onclick="pesanWA('Vanilla Latte')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Honey Latte</h4>
+<div class="old-price">Rp 25.000</div>
+<p>Rp 19.500</p>
+
+<button class="order"
+onclick="pesanWA('honey Latte')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Earl Grey Tea</h4>
+<div class="old-price">Rp 21.000</div>
+<p>Rp 15.500</p>
+
+<button class="order"
+onclick="pesanWA('Earl Grey Tea')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Jasmine Fresh Mint</h4>
+<div class="old-price">Rp 22.000</div>
+<p>Rp 16.500</p>
+
+<button class="order"
+onclick="pesanWA('Jasmine Fresh Mint')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Hibiscus Mix Berry</h4>
+<div class="old-price">Rp 22.000</div>
+<p>Rp 16.500</p>
+
+<button class="order"
+onclick="pesanWA('Hibiscus Mix Berry')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Lychee Tea with Coco Jelly</h4>
+<div class="old-price">Rp 24.000</div>
+<p>Rp 18.500</p>
+
+<button class="order"
+onclick="pesanWA('Lychee Tea with Coco Jelly')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Thai Milk Tea</h4>
+<div class="old-price">Rp 26.000</div>
+<p>Rp 19.500</p>
+
+<button class="order"
+onclick="pesanWA('Thai Milk Tea')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Peach Tea With Coco Jelly</h4>
+<div class="old-price">Rp 24.000</div>
+<p>Rp 18.500</p>
+
+<button class="order"
+onclick="pesanWA('Peach Tea With Coco Jelly')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Lemon Tea With Coco Jelly</h4>
+<div class="old-price">Rp 24.000</div>
+<p>Rp 18.500</p>
+
+<button class="order"
+onclick="pesanWA('Lemon Tea With Coco Jelly')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Earl Grey Milk Tea</h4>
+<div class="old-price">Rp 25.000</div>
+<p>Rp 19.500</p>
+
+<button class="order"
+onclick="pesanWA('Earl Grey Milk Tea')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Blue Batok Long Black</h4>
+<div class="old-price">Rp 25.000</div>
+<p>Rp 19.500</p>
+
+<button class="order"
+onclick="pesanWA('Blue Batok Long Black')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Blue Batok Latte</h4>
+<div class="old-price">Rp 27.000</div>
+<p>Rp 22.000</p>
+
+<button class="order"
+onclick="pesanWA('Blue Batok Latte')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Blue Botak Butter Latte</h4>
+<div class="old-price">Rp 30.000</div>
+<p>Rp 24.500</p>
+
+<button class="order"
+onclick="pesanWA('Blue Batok Butter Latte')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Blue Batok Himalayan Latte</h4>
+<div class="old-price">Rp 30.000</div>
+<p>Rp 24.500</p>
+
+<button class="order"
+onclick="pesanWA('Blue Batok Himalayan Latte')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Pear Shaken Americano</h4>
+<div class="old-price">Rp 25.000</div>
+<p>Rp 19.500</p>
+
+<button class="order"
+onclick="pesanWA('Pear Shaken Americano')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Black Forest Americano</h4>
+<div class="old-price">Rp 25.000</div>
+<p>Rp 19.500</p>
+
+<button class="order"
+onclick="pesanWA('Black Forest Americano')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Mango Americano</h4>
+<div class="old-price">Rp 25.000</div>
+<p>Rp 19.500</p>
+
+<button class="order"
+onclick="pesanWA('mango Americano')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Mont Blanc</h4>
+<div class="old-price">Rp 25.000</div>
+<p>Rp 19.500</p>
+
+<button class="order"
+onclick="pesanWA('mont Blanc')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Hazelnut Choco</h4>
+<div class="old-price">Rp 25.000</div>
+<p>Rp 19.500</p>
+
+<button class="order"
+onclick="pesanWA('Hazelnut Choco')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Milo Macchiato</h4>
+<div class="old-price">Rp 26.000</div>
+<p>Rp 20.500</p>
+
+<button class="order"
+onclick="pesanWA('Milo Macchiato')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Matcha Latte</h4>
+<div class="old-price">Rp 27.000</div>
+<p>Rp 22.000</p>
+
+<button class="order"
+onclick="pesanWA('Matcha Latte')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Classic Chocolate</h4>
+<div class="old-price">Rp 23.000</div>
+<p>Rp 18.000</p>
+
+<button class="order"
+onclick="pesanWA('Classic Chocolate')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Royal Latte</h4>
+<div class="old-price">Rp 26.000</div>
+<p>Rp 20.500</p>
+
+<button class="order"
+onclick="pesanWA('Royale Milo')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Matcha Breeze</h4>
+<div class="old-price">Rp 36.000</div>
+<p>Rp 30.500</p>
+
+<button class="order"
+onclick="pesanWA('Matcha Breeze')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Double Choco Breeze</h4>
+<div class="old-price">Rp 30.000</div>
+<p>Rp 25.500</p>
+
+<button class="order"
+onclick="pesanWA('Double Choco Breeze')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Sea Salt Caramel Breeze</h4>
+<div class="old-price">Rp 30.000</div>
+<p>Rp 25.500</p>
+
+<button class="order"
+onclick="pesanWA('Sea Salt Caramel Breeze')">
+Pesan
+</button>
+
+</div>
+
+<div class='item'>
+
+<h4>Java Mocha Breeze</h4>
+<div class="old-price">Rp 30.000</div>
+<p>Rp 25.500</p>
+
+<button class="order"
+onclick="pesanWA('Java Mocha Breeze')">
+Pesan
+</button>
+
+</div>
+
 
 
 </div>
 
 </section>
+
+<script>
+
+function pesanWA(menu){
+
+let outlet =
+document.getElementById("outlet").value;
+
+let jam =
+document.getElementById("jam").value;
+
+
+let text =
+`Halo A&Y Coffee
+
+KOPI KENANGAN
+Pesanan : ${menu}
+Outlet : ${outlet}
+Jam Pickup : ${jam}
+Size:
+Gula:
+
+catatan:`;
+
+window.open(
+`https://wa.me/6288226744942?text=${encodeURIComponent(text)}`
+);
+
+}
+
+</script>
 
 </body>
 </html>
